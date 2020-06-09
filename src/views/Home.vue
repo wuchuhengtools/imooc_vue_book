@@ -15,5 +15,6 @@ export default {
 <style scoped>
   #test {
     font-family: "Days One";
+    font-size: 1rem;
   }
 </style>
