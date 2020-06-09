@@ -1,22 +1,13 @@
 <template>
   <div class="home">
-    <div id="read"></div>
+    <span class="icon-back"></span>
   </div>
 </template>
 
 <script>
-import Epub from 'epubjs'
-global.ePub = Epub
+import '@/assets/styles/style.css'
 
 export default {
-  name: 'Home',
-  components: {},
-  mounted() {
-    this.book = new Epub('/2018_Book_AgileProcessesInSoftwareEngine.epub')
-    this.book.renderTo('read', {
-      width: window.innerWidth,
-      height: window.innerHeight
-    }).display()
-  }
+  name: 'Home'
 }
 </script>
